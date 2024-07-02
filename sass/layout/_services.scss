@@ -1,6 +1,36 @@
 .services {
   &__paragraph {
-    @include font($titles-color, 14px, "Open sans", 400);
+    @include font($titles-color, 12px, "Open sans", 400);
     text-align: center;
+  }
+
+  &__types {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    &__item {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &__icon {
+      width: 140px;
+      height: 140px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $main-color;
+      border-radius: 50%;
+      margin: auto;
+      color: $white-color;
+    }
+    &__icon:hover {
+      background-color: $text-color;
+    }
   }
 }

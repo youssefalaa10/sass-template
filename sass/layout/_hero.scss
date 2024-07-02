@@ -15,16 +15,32 @@
 
     span {
       text-transform: uppercase;
-      @include font($main-color, 24px, "Poppins", 600px);
+      @include font($main-color, 35px, "Poppins", 600px);
+      opacity: 0;
+      animation: fadeIn 1s ease-in-out forwards;
     }
 
     h2 {
       text-transform: uppercase;
-      @include font($white-color, 34px, "Poppins", 600px);
+      @include font($white-color, 45px, "Poppins", 600px);
+      opacity: 0;
+      animation: fadeIn 1s ease-in-out forwards;
     }
 
     p {
       @include font($white-color, 18px, "Poppins", 400px);
+      opacity: 0;
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
   }
 }
