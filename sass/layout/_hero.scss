@@ -1,0 +1,30 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background-image: url(../../images/slide-1.jpg);
+  background-size: cover;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 650px;
+    text-align: center;
+
+    span {
+      text-transform: uppercase;
+      @include font($main-color, 24px, "Poppins", 600px);
+    }
+
+    h2 {
+      text-transform: uppercase;
+      @include font($white-color, 34px, "Poppins", 600px);
+    }
+
+    p {
+      @include font($white-color, 18px, "Poppins", 400px);
+    }
+  }
+}

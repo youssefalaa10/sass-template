@@ -1,0 +1,9 @@
+.btn {
+    border: 2px solid $btn-color;
+    background-color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    &:hover{
+        @include eleHover()
+    }
+}

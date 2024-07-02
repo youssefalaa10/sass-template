@@ -1,0 +1,12 @@
+.title{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    position: relative;
+    &::before {
+        @include after-before($dash-color,150px);
+    }
+    &::after {
+        @include after-before($main-color,50px);
+    }
+}

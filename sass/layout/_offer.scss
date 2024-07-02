@@ -1,0 +1,11 @@
+.offer {
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: $gap;
+  }
+  &__button {
+    text-align: center;
+    margin: 10px 0;
+  }
+}

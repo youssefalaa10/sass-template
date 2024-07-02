@@ -1,0 +1,17 @@
+.card{
+    display: flex;
+    width: 50%;
+    padding: 0 15px;
+    img {
+        border-radius: 50%;
+        margin-right: 20px;
+        width: 130px;
+        height: 130px;
+    }
+    p{
+        line-height: 24px;
+    }
+    &__price{
+        color: $main-color;
+    }
+}

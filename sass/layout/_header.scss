@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0px;
+
+  img {
+    width: 110px;
+    height: auto;
+  }
+
+  .navmenu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+
+    &__list {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 30px;
+      .navmenu__link {
+        &:hover {
+          @include eleHover($main-color, $white-color);
+        }
+      }
+      .navmenu__link:first-child {
+        color: $main-color;
+      }
+    }
+  }
+  .btn {
+    &:hover {
+      @include eleHover($main-color, $white-color);
+      border: 2px solid $main-color;
+    }
+  }
+}
