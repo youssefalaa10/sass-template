@@ -1,0 +1,40 @@
+.chefs {
+  margin-bottom: 50px;
+
+  &__paragraph {
+    @include font($titles-color, 12px, "Open sans", 400);
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+
+    &__chef {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+
+      padding: 30px;
+      background-color: $gray-background;
+      text-align: center;
+
+      img {
+        width: 150px;
+        height: auto;
+        border-radius: 50%;
+      }
+
+      .chef-name {
+        @include font($titles-color, 16px, "Open sans", 600);
+      }
+
+      .chef-description {
+        @include font($text-color, 14px, "Open sans", 400);
+      }
+    }
+  }
+}

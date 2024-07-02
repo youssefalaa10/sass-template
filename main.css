@@ -187,7 +187,6 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 20px;
 }
 .ourBakery_container__img {
   background-image: url(../../images/img-6.jpg);
@@ -202,7 +201,7 @@
   justify-content: center;
   width: 50%;
   padding: 20px;
-  background-color: #fff;
+  background-color: #f7f7f7;
   color: black;
 }
 .ourBakery_container__text h2 {
@@ -305,6 +304,49 @@
   font-size: 16px;
   font-family: "Open sans", sans-serif;
   font-weight: 600;
+}
+
+.chefs {
+  margin-bottom: 50px;
+}
+.chefs__paragraph {
+  color: #555555;
+  font-size: 12px;
+  font-family: "Open sans", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.chefs__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+.chefs__grid__chef {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 30px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+.chefs__grid__chef img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+}
+.chefs__grid__chef .chef-name {
+  color: #555555;
+  font-size: 16px;
+  font-family: "Open sans", sans-serif;
+  font-weight: 600;
+}
+.chefs__grid__chef .chef-description {
+  color: #696969;
+  font-size: 14px;
+  font-family: "Open sans", sans-serif;
+  font-weight: 400;
 }
 
 .card {

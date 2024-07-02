@@ -2,7 +2,6 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 20px;
 
   &__img {
     background-image: url(../../images/img-6.jpg);
@@ -18,7 +17,7 @@
     justify-content: center;
     width: 50%;
     padding: 20px;
-    background-color: $white-color;
+    background-color: $gray-background;
     color: black;
 
     h2 {
