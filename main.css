@@ -59,6 +59,11 @@
   color: inherit;
 }
 
+::selection {
+  color: #fff;
+  background: #ebb576;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -416,6 +421,74 @@
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+}
+
+.order {
+  margin-bottom: 60px;
+}
+.order form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "child1 child1 child2 child2 " "child3 child3 child4 child4 " "child5 child5 child6 child6" "child7 child7 child7 child7" "child8 child8 child8 child8 ";
+  gap: 10px;
+  margin-bottom: 25px;
+}
+.order form input {
+  font-weight: normal;
+  font-size: 14px;
+  color: #696969;
+  height: 42px;
+  box-shadow: none;
+  padding: 0 10px;
+  outline: 0;
+  border: 1px solid #e1e1e1;
+  border-radius: 0px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.order form input:last-child {
+  height: 60px;
+}
+.order .child1 {
+  grid-area: child1;
+}
+.order .child2 {
+  grid-area: child2;
+}
+.order .child3 {
+  grid-area: child3;
+}
+.order .child4 {
+  grid-area: child4;
+}
+.order .child5 {
+  grid-area: child5;
+}
+.order .child6 {
+  grid-area: child6;
+}
+.order .child7 {
+  grid-area: child7;
+}
+.order .child8 {
+  grid-area: child8;
+}
+.order .btn {
+  text-transform: uppercase;
+  background-color: #ebb576;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+}
+.order .btn:hover {
+  color: #ebb576;
+  background-color: #fff;
+  transition: 0.3s all ease-in-out;
+  border: 2px solid #ebb576;
+}
+
+.blog {
+  padding: 40px 0;
+  background-color: #f7f7f7;
 }
 
 .card {

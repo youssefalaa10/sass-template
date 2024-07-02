@@ -1,0 +1,70 @@
+.order {
+  margin-bottom: 60px;
+  form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "child1 child1 child2 child2 "
+      "child3 child3 child4 child4 "
+      "child5 child5 child6 child6"
+      "child7 child7 child7 child7"
+      "child8 child8 child8 child8 ";
+
+    gap: 10px;
+
+    input {
+      font-weight: normal;
+      font-size: 14px;
+      color: #696969;
+      height: 42px;
+      box-shadow: none;
+      padding: 0 10px;
+      outline: 0;
+      border: 1px solid #e1e1e1;
+      border-radius: 0px;
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+    input:last-child {
+      height: 60px;
+    }
+    margin-bottom: 25px;
+  }
+  .child1 {
+    grid-area: child1;
+  }
+  .child2 {
+    grid-area: child2;
+  }
+  .child3 {
+    grid-area: child3;
+  }
+  .child4 {
+    grid-area: child4;
+  }
+  .child5 {
+    grid-area: child5;
+  }
+  .child6 {
+    grid-area: child6;
+  }
+  .child7 {
+    grid-area: child7;
+  }
+  .child8 {
+    grid-area: child8;
+  }
+
+  .btn {
+    text-transform: uppercase;
+    background-color: $main-color;
+    border: none;
+    border-radius: 8px;
+    color: $white-color;
+  }
+  .btn {
+    &:hover {
+      @include eleHover($main-color, $white-color);
+      border: 2px solid $main-color;
+    }
+  }
+}

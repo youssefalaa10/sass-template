@@ -13,3 +13,7 @@
     color: inherit;
   }
 }
+::selection {
+  color: $white-color;
+  background: $main-color;
+}
