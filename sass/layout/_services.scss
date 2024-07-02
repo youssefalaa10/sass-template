@@ -1,0 +1,6 @@
+.services {
+  &__paragraph {
+    @include font($titles-color, 14px, "Open sans", 400);
+    text-align: center;
+  }
+}
