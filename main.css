@@ -195,13 +195,13 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 20px;
+  background-color: #f7f7f7;
 }
 .ourBakery_container__img {
   background-image: url(../../images/img-6.jpg);
   background-size: cover;
-  background-position: center;
-  height: 400px;
+  background-position: top;
+  height: 550px;
   width: 50%;
 }
 .ourBakery_container__text {
@@ -209,8 +209,7 @@
   flex-direction: column;
   justify-content: center;
   width: 50%;
-  padding: 20px;
-  background-color: #fff;
+  padding: 60px;
   color: black;
 }
 .ourBakery_container__text h2 {
@@ -368,6 +367,7 @@
   background-image: url(../../images/parallax-2.jpg);
   background-attachment: fixed;
   background-size: cover;
+  background-position: top;
   padding: 80px 0;
   position: relative;
 }
@@ -445,8 +445,10 @@
   border-radius: 0px;
   background-color: rgba(255, 255, 255, 0.9);
 }
-.order form input:last-child {
-  height: 60px;
+.order form textarea {
+  padding: 12px;
+  box-shadow: none;
+  border: 1px solid #e1e1e1;
 }
 .order .child1 {
   grid-area: child1;
@@ -489,6 +491,38 @@
 .blog {
   padding: 40px 0;
   background-color: #f7f7f7;
+}
+.blog__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+}
+.blog__grid img {
+  width: 340px;
+  height: 165px;
+}
+.blog__grid .blog-text {
+  text-align: center;
+  color: #555555;
+  margin-bottom: 10px;
+}
+.blog__grid .blog-span1 {
+  margin-left: 50px;
+  color: #555555;
+}
+.blog__grid .blog-span1 .icon {
+  font-size: 14px;
+}
+
+.menu-image {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.menu-image img {
+  width: 378px;
+  height: 280px;
+  object-fit: cover;
 }
 
 .card {

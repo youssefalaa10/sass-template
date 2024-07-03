@@ -2,13 +2,13 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 20px;
+  background-color: $gray-background;
 
   &__img {
     background-image: url(../../images/img-6.jpg);
     background-size: cover;
-    background-position: center;
-    height: 400px;
+    background-position: top;
+    height: 550px;
     width: 50%;
   }
 
@@ -17,8 +17,7 @@
     flex-direction: column;
     justify-content: center;
     width: 50%;
-    padding: 20px;
-    background-color: $white-color;
+    padding: 60px;
     color: black;
 
     h2 {

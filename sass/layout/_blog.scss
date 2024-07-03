@@ -1,4 +1,27 @@
 .blog {
   padding: 40px 0;
   background-color: $gray-background;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    img {
+      width: 340px;
+      height: 165px;
+    }
+    .blog-text {
+      text-align: center;
+      color: $titles-color;
+      margin-bottom: 10px;
+    }
+    .blog-span1 {
+      margin-left: 50px;
+
+      color: $titles-color;
+      .icon {
+        font-size: 14px;
+      }
+    }
+  }
 }

@@ -1,0 +1,10 @@
+.menu-image {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  img {
+    width: 378px;
+    height: 280px;
+    object-fit: cover;
+  }
+}
