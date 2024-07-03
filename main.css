@@ -527,6 +527,84 @@
   object-fit: cover;
 }
 
+footer {
+  padding: 60px 0;
+  background-image: url(/images/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+footer .social-icons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+footer .social-icons .icon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #555;
+  border-radius: 50%;
+  cursor: pointer;
+}
+footer .social-icons .icon:hover i {
+  color: #ebb576;
+}
+footer .social-icons .icon i {
+  color: #fff;
+  transition: 0.3s;
+}
+footer .logo {
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px;
+}
+footer .logo img {
+  width: 110px;
+  height: auto;
+}
+footer .address {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+footer .address span {
+  color: #fff;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+footer .address span:nth-child(even) {
+  color: #ebb576;
+}
+footer .copy {
+  position: relative;
+  text-align: center;
+}
+footer .copy span {
+  color: #ddd;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
 .card {
   display: flex;
   width: 50%;

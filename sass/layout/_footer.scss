@@ -1,0 +1,85 @@
+footer {
+  padding: 60px 0;
+  background-image: url(/images/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.7);
+  }
+
+  .social-icons {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+
+    .icon {
+      width: 42px;
+      height: 42px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #555;
+      border-radius: 50%;
+      cursor: pointer;
+
+      &:hover {
+        i {
+          color: $main-color;
+        }
+      }
+
+      i {
+        color: $white-color;
+        transition: 0.3s;
+      }
+    }
+  }
+
+  .logo {
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+
+    img {
+      width: 110px;
+      height: auto;
+    }
+  }
+
+  .address {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+
+    span {
+      @include font($white-color, 14px, "Poppins", 400)
+    }
+
+    span:nth-child(even) {
+      color: $main-color;
+    }
+  }
+
+  .copy {
+    position: relative;
+    text-align: center;
+
+    span {
+      @include font($dash-color, 12px, "Poppins", 400)
+    }
+  }
+}
