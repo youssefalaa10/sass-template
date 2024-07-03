@@ -495,32 +495,34 @@
 .blog__grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 40px;
+  gap: 40px;
 }
-.blog__grid img {
-  width: 340px;
+.blog__grid__post {
+  text-align: center;
+}
+.blog__grid__post img {
+  width: 100%;
   height: 165px;
 }
-.blog__grid .blog-text {
+.blog__grid__post .blog-text {
   text-align: center;
   color: #555555;
   margin-bottom: 10px;
 }
-.blog__grid .blog-span1 {
+.blog__grid__post .blog-span1 {
   margin-left: 50px;
   color: #555555;
 }
-.blog__grid .blog-span1 .icon {
+.blog__grid__post .blog-span1 .icon {
   font-size: 14px;
 }
 
 .menu-image {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .menu-image img {
-  width: 378px;
+  width: 100%;
   height: 280px;
   object-fit: cover;
 }
