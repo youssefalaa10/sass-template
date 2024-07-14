@@ -11,4 +11,38 @@
     text-align: center;
     margin: 10px 0;
   }
+
+  &__categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+
+    &__category {
+      position: relative;
+      font-weight: 600;
+      color: #777;
+      cursor: pointer;
+      transition: 0.2s;
+
+      &:hover {
+        color: $main-color;
+      }
+
+      &:not(:last-of-type) {
+        &::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: calc(100% + 20px);
+          width: 6px;
+          height: 6px;
+          background-color: #777;
+          border-radius: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
 }
