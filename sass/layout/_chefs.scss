@@ -9,7 +9,7 @@
 
   &__grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 
     &__chef {
@@ -17,7 +17,6 @@
       flex-direction: column;
       align-items: center;
       gap: 15px;
-
       padding: 30px;
       background-color: $gray-background;
       text-align: center;
@@ -35,6 +34,53 @@
       .chef-description {
         @include font($text-color, 14px, "Open sans", 400);
       }
+    }
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .chefs__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .chefs__grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .chefs__grid__chef {
+    img {
+      width: 120px;
+    }
+
+    .chef-name {
+      font-size: 14px;
+    }
+
+    .chef-description {
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .chefs__grid__chef {
+    padding: 20px;
+
+    img {
+      width: 100px;
+    }
+
+    .chef-name {
+      font-size: 12px;
+    }
+
+    .chef-description {
+      font-size: 10px;
     }
   }
 }

@@ -1,9 +1,9 @@
 .statistics {
-  background-image: url('/images/pattern-1.jpg');
+  background-image: url("/images/pattern-1.jpg");
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -29,7 +29,7 @@
         @include font($white-color, 48px, "Open sans", 500);
 
         &::before {
-          content: '';
+          content: "";
           position: absolute;
           width: 30px;
           height: 2px;

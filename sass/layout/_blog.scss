@@ -2,17 +2,29 @@
   padding: 40px 0;
   background-color: $gray-background;
 
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .chefs__paragraph {
+    text-align: center;
+    margin-bottom: 40px;
+    @include font($titles-color, 14px, "Open sans", 400);
+  }
+
   &__grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
 
     &__post {
       text-align: center;
-      
+
       img {
         width: 100%;
-        height: 165px;
+        height: auto;
+        max-height: 165px;
       }
 
       .blog-text {
@@ -23,7 +35,6 @@
 
       .blog-span1 {
         margin-left: 50px;
-
         color: $titles-color;
 
         .icon {
@@ -31,7 +42,55 @@
         }
       }
     }
+  }
+}
 
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .blog__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
 
+@media (max-width: 768px) {
+  .blog__grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .blog__grid__post {
+    img {
+      max-height: 140px;
+    }
+
+    .blog-text {
+      font-size: 14px;
+    }
+
+    .blog-span1 {
+      margin-left: 0;
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .blog__grid__post {
+    img {
+      max-height: 120px;
+    }
+
+    .blog-text {
+      font-size: 12px;
+    }
+
+    .blog-span1 {
+      font-size: 10px;
+
+      .icon {
+        font-size: 12px;
+      }
+    }
   }
 }

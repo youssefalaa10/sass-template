@@ -162,7 +162,7 @@
 }
 .services__types {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -191,6 +191,47 @@
   font-size: 35px;
 }
 
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .services__types {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .services__types {
+    grid-template-columns: 1fr;
+  }
+  .services__types__item {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .services__types__icon {
+    width: 100px;
+    height: 100px;
+  }
+  .services__types__icon .icon {
+    font-size: 25px;
+  }
+  .services__paragraph {
+    color: #555555;
+    font-size: 10px;
+    font-family: "Open sans", sans-serif;
+    font-weight: 400;
+  }
+  .card--font {
+    color: #555555;
+    font-size: 14px;
+    font-family: "Open sans", sans-serif;
+    font-weight: 600;
+  }
+  .card__content--font {
+    color: #555555;
+    font-size: 10px;
+    font-family: "Open sans", sans-serif;
+    font-weight: 400;
+  }
+}
 .ourBakery_container {
   display: flex;
   flex-wrap: wrap;
@@ -333,7 +374,7 @@
 }
 .chefs__grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 .chefs__grid__chef {
@@ -363,6 +404,42 @@
   font-weight: 400;
 }
 
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .chefs__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .chefs__grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .chefs__grid__chef img {
+    width: 120px;
+  }
+  .chefs__grid__chef .chef-name {
+    font-size: 14px;
+  }
+  .chefs__grid__chef .chef-description {
+    font-size: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .chefs__grid__chef {
+    padding: 20px;
+  }
+  .chefs__grid__chef img {
+    width: 100px;
+  }
+  .chefs__grid__chef .chef-name {
+    font-size: 12px;
+  }
+  .chefs__grid__chef .chef-description {
+    font-size: 10px;
+  }
+}
 .feedback {
   background-image: url(../../images/parallax-2.jpg);
   background-attachment: fixed;
@@ -492,9 +569,21 @@
   padding: 40px 0;
   background-color: #f7f7f7;
 }
+.blog .title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.blog .chefs__paragraph {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #555555;
+  font-size: 14px;
+  font-family: "Open sans", sans-serif;
+  font-weight: 400;
+}
 .blog__grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
 }
 .blog__grid__post {
@@ -502,7 +591,8 @@
 }
 .blog__grid__post img {
   width: 100%;
-  height: 165px;
+  height: auto;
+  max-height: 165px;
 }
 .blog__grid__post .blog-text {
   text-align: center;
@@ -517,6 +607,43 @@
   font-size: 14px;
 }
 
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .blog__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .blog__grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .blog__grid__post img {
+    max-height: 140px;
+  }
+  .blog__grid__post .blog-text {
+    font-size: 14px;
+  }
+  .blog__grid__post .blog-span1 {
+    margin-left: 0;
+    font-size: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .blog__grid__post img {
+    max-height: 120px;
+  }
+  .blog__grid__post .blog-text {
+    font-size: 12px;
+  }
+  .blog__grid__post .blog-span1 {
+    font-size: 10px;
+  }
+  .blog__grid__post .blog-span1 .icon {
+    font-size: 12px;
+  }
+}
 .menu-image {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
