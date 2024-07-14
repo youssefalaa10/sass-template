@@ -2,9 +2,17 @@
   margin-bottom: 50px;
 
   &__cards {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: $gap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    @media (max-width: 992px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .card {
+    width: 100%;
   }
 
   &__button {
@@ -14,6 +22,7 @@
 
   &__categories {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 40px;

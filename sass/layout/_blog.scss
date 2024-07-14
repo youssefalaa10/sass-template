@@ -43,53 +43,53 @@
       }
     }
   }
-}
 
-/* Responsive styles */
-@media (max-width: 1024px) {
-  .blog__grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-  }
-}
-
-@media (max-width: 768px) {
-  .blog__grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .blog__grid__post {
-    img {
-      max-height: 140px;
-    }
-
-    .blog-text {
-      font-size: 14px;
-    }
-
-    .blog-span1 {
-      margin-left: 0;
-      font-size: 12px;
+  /* Responsive styles */
+  @media (max-width: 1024px) {
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
     }
   }
-}
 
-@media (max-width: 480px) {
-  .blog__grid__post {
-    img {
-      max-height: 120px;
+  @media (max-width: 768px) {
+    &__grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
     }
 
-    .blog-text {
-      font-size: 12px;
-    }
+    &__grid__post {
+      img {
+        max-height: 140px;
+      }
 
-    .blog-span1 {
-      font-size: 10px;
+      .blog-text {
+        font-size: 14px;
+      }
 
-      .icon {
+      .blog-span1 {
+        margin-left: 0;
         font-size: 12px;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__grid__post {
+      img {
+        max-height: 120px;
+      }
+
+      .blog-text {
+        font-size: 12px;
+      }
+
+      .blog-span1 {
+        font-size: 10px;
+
+        .icon {
+          font-size: 12px;
+        }
       }
     }
   }

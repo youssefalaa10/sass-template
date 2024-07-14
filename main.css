@@ -74,11 +74,49 @@
   width: 110px;
   height: auto;
 }
+.header .controllers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .controllers .nav-toggle-btn {
+  cursor: pointer;
+  transition: 0.2s;
+}
+.header .controllers .nav-toggle-btn:hover {
+  color: #ebb576;
+}
+@media (min-width: 992px) {
+  .header .controllers .nav-toggle-btn {
+    display: none;
+  }
+}
 .header .navmenu {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 30px;
+}
+.header .navmenu.show {
+  display: flex;
+}
+@media (max-width: 992px) {
+  .header .navmenu {
+    display: none;
+  }
+  .header .navmenu .navmenu__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fff;
+    padding: 20px;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
 }
 .header .navmenu__list {
   display: flex;
@@ -99,6 +137,11 @@
   background-color: #fff;
   transition: 0.3s all ease-in-out;
   border: 2px solid #ebb576;
+}
+@media (max-width: 992px) {
+  .header .btn {
+    display: none;
+  }
 }
 
 .hero {
@@ -304,9 +347,17 @@
   margin-bottom: 50px;
 }
 .offer__cards {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+@media (max-width: 992px) {
+  .offer__cards {
+    grid-template-columns: 1fr;
+  }
+}
+.offer .card {
+  width: 100%;
 }
 .offer__button {
   text-align: center;
@@ -314,6 +365,7 @@
 }
 .offer__categories {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 40px;
@@ -359,6 +411,17 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
   padding: 50px 0;
+}
+@media (max-width: 992px) {
+  .statistics .columns {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 575px) {
+  .statistics .columns {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
 }
 .statistics .columns__box {
   display: flex;
@@ -597,6 +660,7 @@
 .blog {
   padding: 40px 0;
   background-color: #f7f7f7;
+  /* Responsive styles */
 }
 .blog .title {
   text-align: center;
@@ -635,8 +699,6 @@
 .blog__grid__post .blog-span1 .icon {
   font-size: 14px;
 }
-
-/* Responsive styles */
 @media (max-width: 1024px) {
   .blog__grid {
     grid-template-columns: repeat(2, 1fr);
@@ -673,6 +735,7 @@
     font-size: 12px;
   }
 }
+
 .menu-image {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;

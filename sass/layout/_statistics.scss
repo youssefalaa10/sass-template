@@ -18,6 +18,15 @@
     gap: 20px;
     padding: 50px 0;
 
+    @media (max-width: 992px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 575px) {
+      grid-template-columns: 1fr;
+      gap: 50px;
+    }
+
     &__box {
       display: flex;
       flex-direction: column;
