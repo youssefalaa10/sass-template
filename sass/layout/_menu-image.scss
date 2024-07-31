@@ -1,9 +1,17 @@
 .menu-image {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  
+  overflow: hidden;
+  width: 100%;
+  height: 280px;
+  position: relative;
+
+  &__container {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    width: calc(100% ); // Assuming you want to show 6 images at a time
+  }
+
   img {
-    width: 100%;
+    width: calc(100% / 6); // Assuming you want to show 6 images at a time
     height: 280px;
     object-fit: cover;
   }

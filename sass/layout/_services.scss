@@ -11,51 +11,26 @@
     margin-top: 40px;
     margin-bottom: 40px;
 
-    &__item {
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
+    @media (max-width: 1024px) {
+      
+        grid-template-columns: repeat(2, 1fr);
+      
     }
 
-    &__icon {
-      width: 140px;
-      height: 140px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: $main-color;
-      border-radius: 50%;
-      margin: auto;
-      color: $white-color;
-
-      &:hover {
-        background-color: $text-color;
-      }
+    @media (max-width: 768px) {
+      
+        grid-template-columns: 1fr;
+      
+    
+     
     }
-
-    .icon {
-      font-size: 35px;
-    }
+    
   }
 }
 
 /* Responsive styles */
-@media (max-width: 1024px) {
-  .services__types {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
-@media (max-width: 768px) {
-  .services__types {
-    grid-template-columns: 1fr;
-  }
 
-  .services__types__item {
-    margin-bottom: 20px;
-  }
-}
 
 @media (max-width: 480px) {
   .services__types__icon {

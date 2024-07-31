@@ -5,3 +5,14 @@
     border: 0;
     border-radius: 4px;
   }
+  %h{
+    @include font($titles-color, 18px, "Open sans", 700);
+  }
+  %p{
+    @include font($text-color, 16px, "Poppins", 400);
+  }
+  %flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

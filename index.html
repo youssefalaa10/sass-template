@@ -7,19 +7,20 @@
   <title>Sass Template</title>
   <link rel="stylesheet" href="./all.min.css">
   <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="main.css" />
+  <link rel="icon" type="logo/png" href="images/logo.png" />
 </head>
 
 <body>
-  <!-- ====== Header section ======= -->
+  <!-- ====== Start Header section ======= -->
   <header>
     <div class="container header">
       <a href="index.html">
         <img src="images/bakery-logo.png" alt="bakery" />
       </a>
-      <!-- navbar section -->
+      <!-- Start navbar section -->
       <div class="controllers">
         <nav class="navmenu">
           <ul class="navmenu__list">
@@ -42,27 +43,28 @@
 
         <i class="fa-solid fa-bars nav-toggle-btn"></i>
       </div>
+      <!-- End navbar section -->
+    </div>
   </header>
-  <!-- End of Header section ======= -->
+  <!-- End of Header section  -->
 
-  <!-- === Hero Section ==== -->
+  <!-- === Start Hero Section ==== -->
   <section class="hero">
+    <div class="hero__arrow hero__arrow--left">&#10094;</div>
     <div class="hero__content">
-      <span>
-        Welcome To
-      </span>
-      <h2>
-        Bakery Catalog Demo
-      </h2>
+      <span>Welcome To</span>
+      <h2>Bakery Catalog Demo</h2>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel tempora ut id? Aperiam ullam corrupti culpa!
         Molestiae quaerat inventore
       </p>
     </div>
+    <div class="hero__arrow hero__arrow--right">&#10095;</div>
   </section>
-  <!-- === End of Hero Section === -->
+  
+  <!-- End of Hero Section  -->
 
-  <!-- === Services Section ==== -->
+  <!-- === Start Services Section ==== -->
   <div class="container">
     <section class="services">
       <div class="title">
@@ -73,32 +75,32 @@
       </p>
       <div class="services__types">
         <div class="services__types__item">
-          <div class="services__types__icon">
-            <i class="fa-solid fa-graduation-cap icon"></i>
+          <div class="services__types__item__icon">
+            <i class="fa-solid fa-chess-queen icon"></i>
           </div>
           <h5 class="card--font">TOP CHEFS</h5>
           <p class="card__content--font">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
             fugiat nulla pariatur.</p>
         </div>
         <div class="services__types__item">
-          <div class="services__types__icon">
-            <i class="fa-solid fa-pizza-slice icon"></i>
+          <div class="services__types__item__icon">
+            <i class="fa-solid fa-burger icon"></i>
           </div>
           <h5 class="card--font">FRESH INGREDIENTS</h5>
           <p class="card__content--font">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
             fugiat nulla pariatur.</p>
         </div>
         <div class="services__types__item">
-          <div class="services__types__icon">
-            <i class="fa-solid fa-mug-hot icon"></i>
+          <div class="services__types__item__icon">
+            <i class="fa-solid fa-hotdog icon"></i>
           </div>
           <h5 class="card--font">ATTRACTIVE FLAVORS</h5>
           <p class="card__content--font">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
             fugiat nulla pariatur.</p>
         </div>
         <div class="services__types__item">
-          <div class="services__types__icon">
-            <i class="fa-solid fa-spoon icon"></i>
+          <div class="services__types__item__icon">
+            <i class="fa-solid fa-utensils icon"></i>
           </div>
           <h5 class="card--font">PROFESSIONAL</h5>
           <p class="card__content--font">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
@@ -109,7 +111,7 @@
   </div>
   <!-- === End of Services Section === -->
 
-  <!-- OUR BAKERY Section -->
+  <!-- Start OUR BAKERY Section -->
 
   <section class="ourBakery_container">
     <div class="ourBakery_container__img"></div>
@@ -137,7 +139,7 @@
 
   <!-- End of BAKERY Section-->
 
-  <!-- ====== Offer section ======= -->
+  <!-- ====== Start Offer section ======= -->
   <div class="container">
     <section class="offer">
       <div class="title">
@@ -167,7 +169,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="https://preview.milingona.co/themes/bakery/catalog/wp-content/uploads/2017/12/product-6-150x150.jpg"
+          <img src="images/product-5.jpg"
             alt="sourdough" />
           <div>
             <h3 class="card--font">sourdough</h3>
@@ -179,7 +181,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="https://preview.milingona.co/themes/bakery/catalog/wp-content/uploads/2017/12/product-6-150x150.jpg"
+          <img src="images/product-3.jpg"
             alt="sourdough" />
           <div>
             <h3 class="card--font">sourdough</h3>
@@ -191,7 +193,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="https://preview.milingona.co/themes/bakery/catalog/wp-content/uploads/2017/12/product-6-150x150.jpg"
+          <img src="images/product-1.jpg"
             alt="sourdough" />
           <div>
             <h3 class="card--font">sourdough</h3>
@@ -203,7 +205,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="https://preview.milingona.co/themes/bakery/catalog/wp-content/uploads/2017/12/product-6-150x150.jpg"
+          <img src="images/product-1.jpg"
             alt="sourdough" />
           <div>
             <h3 class="card--font">sourdough</h3>
@@ -215,7 +217,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="https://preview.milingona.co/themes/bakery/catalog/wp-content/uploads/2017/12/product-6-150x150.jpg"
+          <img src="images/product-5.jpg"
             alt="sourdough" />
           <div>
             <h3 class="card--font">sourdough</h3>
@@ -235,26 +237,26 @@
   </div>
   <!-- ====== End of Offer section ======= -->
 
-  <!-- ===== Statistics section ===== -->
+  <!-- ===== Start Statistics section ===== -->
 
   <section class="statistics">
     <div class="container">
-      <div class="columns">
-        <div class="columns__box">
-          <span class="columns__box__number">9750 +</span>
-          <span class="columns__box__name">Happy Customers</span>
+      <div class="numbers">
+        <div class="numbers__box">
+          <span class="numbers__box__number">9750 +</span>
+          <span class="numbers__box__name">Happy Customers</span>
         </div>
-        <div class="columns__box">
-          <span class="columns__box__number">2800 +</span>
-          <span class="columns__box__name">Cooked dishes</span>
+        <div class="numbers__box">
+          <span class="numbers__box__number">2800 +</span>
+          <span class="numbers__box__name">Cooked dishes</span>
         </div>
-        <div class="columns__box">
-          <span class="columns__box__number">5700 +</span>
-          <span class="columns__box__name">Social Media Fans</span>
+        <div class="numbers__box">
+          <span class="numbers__box__number">5700 +</span>
+          <span class="numbers__box__name">Social Media Fans</span>
         </div>
-        <div class="columns__box">
-          <span class="columns__box__number">6400 +</span>
-          <span class="columns__box__name">Worked Hours</span>
+        <div class="numbers__box">
+          <span class="numbers__box__number">6400 +</span>
+          <span class="numbers__box__name">Worked Hours</span>
         </div>
       </div>
     </div>
@@ -262,45 +264,80 @@
 
   <!-- ===== End of Statistics section ===== -->
 
-  <!-- ===== Chef section ===== -->
+  <!-- ===== Start Chef section ===== -->
 
   <div class="container">
     <section class="chefs">
       <div class="title">
         <h2 class="title--font">MEET OUR CHEFS</h2>
       </div>
-      <p class="chefs__paragraph">
-        Main core of our company is our staff
-      </p>
+      <p class="chefs__paragraph">Main core of our company is our staff</p>
       <div class="chefs__grid">
         <div class="chefs__grid__chef">
-          <img src="images/team-1.jpg" alt="Chef">
+          <div class="chef-image-wrapper">
+            <img src="images/team-1.jpg" alt="Chef">
+            <div class="overlay">
+              <div class="social-icons">
+                <a href="#"><i class="fa fa-phone"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
           <span class="chef-name">MIKKIE RURK</span>
           <p class="chef-description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
           </p>
         </div>
         <div class="chefs__grid__chef">
-          <img src="images/team-2.jpg" alt="Chef">
+          <div class="chef-image-wrapper">
+            <img src="images/team-2.jpg" alt="Chef">
+            <div class="overlay">
+              <div class="social-icons">
+                <a href="#"><i class="fa fa-phone"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
           <span class="chef-name">MIKKIE RURK</span>
           <p class="chef-description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
           </p>
         </div>
         <div class="chefs__grid__chef">
-          <img src="images/team-3.jpg" alt="Chef">
+          <div class="chef-image-wrapper">
+            <img src="images/team-3.jpg" alt="Chef">
+            <div class="overlay">
+              <div class="social-icons">
+                <a href="#"><i class="fa fa-phone"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
           <span class="chef-name">MIKKIE RURK</span>
           <p class="chef-description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
           </p>
         </div>
         <div class="chefs__grid__chef">
-          <img src="images/team-4.jpg" alt="Chef">
+          <div class="chef-image-wrapper">
+            <img src="images/team-4.jpg" alt="Chef">
+            <div class="overlay">
+              <div class="social-icons">
+                <a href="#"><i class="fa fa-phone"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
           <span class="chef-name">MIKKIE RURK</span>
           <p class="chef-description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
           </p>
         </div>
+        <!-- Repeat similar blocks for other chefs -->
       </div>
     </section>
   </div>
@@ -308,19 +345,19 @@
 
   <!-- ===== End of chef section ===== -->
 
-  <!-- ==== Feedback section ==== -->
+  <!-- ==== Start Feedback section ==== -->
   <section class="feedback">
     <div class="feedback__content">
-      <img src="./images/testimonial-1.jpg" alt="">
+      <img src="./images/team-4.jpg" alt="">
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum quam aliquid modi at beatae voluptas!
         Maiores, necessitatibus quam veniam ullam odio unde rerum voluptas dolor harum ducimus laudantium architecto
         dignissimos?</p>
-      <span>Youssef-Omar</span>
+      <span>Youssef Alaa</span>
     </div>
   </section>
   <!-- End of Feedback section -->
 
-  <!-- === ORDER NOW Section === -->
+  <!-- === Start ORDER NOW Section === -->
   <div class="container">
     <section class="order">
       <div class="title">
@@ -347,7 +384,7 @@
   </div>
   <!-- === End of ORDER NOW === -->
 
-  <!-- === BLOG POSTS Section ===-->
+  <!-- === Start BLOG POSTS Section ===-->
 
   <section class="blog">
     <div class="container">
@@ -413,16 +450,25 @@
 
   <!-- End of BLOG POSTS Section -->
 
-  <!-- === menu image section === -->
+  <!-- === Start menu image section === -->
   <section class="menu-image">
-    <img src="images/img-1-blog.jpg" alt="">
-    <img src="images/img-3.jpg" alt="">
-    <img src="images/img-17.jpg" alt="">
-    <img src="images/img-blog.jpg" alt="">
+    <div class="menu-image__container">
+      <img src="images/img-1-blog.jpg" alt="">
+      <img src="images/img-3.jpg" alt="">
+      <img src="images/img-17.jpg" alt="">
+      <img src="images/img-blog.jpg" alt="">
+      <img src="images/img-1-blog.jpg" alt="">
+      <img src="images/img-3.jpg" alt="">
+      <img src="images/img-blog.jpg" alt="">
+      <img src="images/img-1-blog.jpg" alt="">
+      <img src="images/img-3.jpg" alt="">
+    </div>
   </section>
+  
+  
   <!-- End of menu image section -->
 
-  <!-- Footer Section -->
+  <!-- Start Footer Section -->
   <footer>
     <div class="social-icons">
       <div class="icon">
@@ -457,12 +503,12 @@
     </div>
 
     <div class="copy">
-      <span>Copyright © 2015-2018 Bakery WordPress Theme by Milingona.</span>
+      <span>Copyright © 2015-2018 Bakery Theme by Youssef Alaa.</span>
     </div>
   </footer>
   <!-- End of Footer section -->
 
-  <!-- js -->
+  <!-- JavaScript -->
   <script src="main.js"></script>
 </body>
 
